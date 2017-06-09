@@ -15,7 +15,7 @@
     </template>
   
     <slot></slot>
-    <slot name="block" class="card-block"></slot>
+    <div v-if="this.$slots.block" class="card-block"><slot name="block"></slot></div>
   
     <div v-if="this.$slots.footer" class="card-footer text-muted">
       <slot name="footer"></slot>

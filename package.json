@@ -1,7 +1,7 @@
 {
   "name": "es-ui",
   "description": "Vue JS Components Library",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "author": "Alamin <al.ahmed@outlook.com>",
   "private": true,
   "scripts": {
