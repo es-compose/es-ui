@@ -15,7 +15,7 @@
     </template>
   
     <slot></slot>
-    <slot name="block"></slot>
+    <slot name="block" class="card-block"></slot>
   
     <div v-if="this.$slots.footer" class="card-footer text-muted">
       <slot name="footer"></slot>
@@ -30,7 +30,12 @@ export default {
     inverse: Boolean,
     styling: String,
     align: String,
-    model: Object
+    model: {
+      type: Object,
+      default() {
+        return {}
+      }
+    }
   },
 
   computed: {
